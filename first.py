@@ -1,3 +1,8 @@
-x=int (3)
-y=int(2.3)
-print(type(y))
+name ='Maliha'
+last_name= "shahi"
+my_name= "my name is : \'Maliha\'"
+print (my_name)
+b=""" i am maliha
+form afghanistan
+"""
+print(b)
