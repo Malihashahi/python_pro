@@ -1,7 +1,9 @@
-a = "Maliha "
-b = "Shahi"
-c = a + " " + b
-print(c)
-age = 24
-txt = f"My name is Maliha, I am {age}"
-print(txt)
+a = 200
+b = 33
+
+if b > a:
+  print("b is greater than a")
+else:
+  print("b is not greater than a")
+
+  
