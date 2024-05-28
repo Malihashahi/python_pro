@@ -1,9 +1,5 @@
-a = 200
-b = 33
 
-if b > a:
-  print("b is greater than a")
-else:
-  print("b is not greater than a")
-
-  
+first_number= input("choose a number 1-9 :")
+first_number =int(first_number)
+first_number=first_number*3
+print(first_number)
