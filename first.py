@@ -1,5 +1,6 @@
 mylist = ["apple", "banana", "cherry"]
-print(type(mylist))
-thislist = ["apple", "banana", "cherry"]
-print(len(thislist))
-list1 = ["abc", 34, True, 40, "male"]
+#print(type(mylist))
+print(mylist[2:3])
+print(type(mylist[2:3]))
+print(mylist[:2])
+print(mylist[0:])
