@@ -1,11 +1,16 @@
-thislist = ["apple", "banana", "cherry"]
-thislist[1:3] = ["watermelon"]
+thislist = ["apple", "banana", "cherry", "banana", "kiwi"]
+thislist.remove("banana")
 print(thislist)
-#.//////////////////////////////////////
-thislist1 = ["apple", "banana", "cherry"]
-thislist1.append("orange")
-print(thislist1)
-#/////////////////////////////////////////
-thislist2 = ["apple", "banana", "cherry"]
-thislist2.insert(1, "orange")
+#///////////////////
+thislist2 = ["apple", "banana", "cherry", "banana", "kiwi"]
+thislist2.remove("banana")
 print(thislist2)
+#////////////////
+
+thislist3 = ["apple", "banana", "cherry"]
+del thislist3[0]
+print(thislist3)
+#...........................................
+thislist4 = ["apple", "banana", "cherry"]
+thislist4.clear()
+print(thislist4)
