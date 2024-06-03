@@ -1,16 +1,16 @@
-thislist = ["apple", "banana", "cherry", "banana", "kiwi"]
-thislist.remove("banana")
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort()
 print(thislist)
-#///////////////////
-thislist2 = ["apple", "banana", "cherry", "banana", "kiwi"]
-thislist2.remove("banana")
+#///////////////////////////////////////
+thislist2 = [100, 50, 65, 82, 23]
+thislist2.sort()
 print(thislist2)
-#////////////////
-
-thislist3 = ["apple", "banana", "cherry"]
-del thislist3[0]
+#/////////////
+thislist3 = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist3.sort(reverse = True)
 print(thislist3)
-#...........................................
-thislist4 = ["apple", "banana", "cherry"]
-thislist4.clear()
+#///////////////////////////////////////////////////////////
+thislist4 = ["banana", "Orange", "Kiwi", "cherry"]
+thislist4.reverse()
 print(thislist4)
+
