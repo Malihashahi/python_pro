@@ -1,19 +1,27 @@
-list1 = ["a", "b", "c"]
-list2 = [1, 2, 3]
+thistuple = ("apple", "banana", "cherry")
+print(thistuple)
 
-list3 = list1 + list2
-print(list3)
-#/////////////////////////////////
-list3 = ["a", "b" , "c"]
-list4 = [1, 2, 3]
 
-for x in list4:
-  list3.append(x)
+thistuple2 = ("apple", "banana", "cherry")
+print(thistuple2[1])
 
-print(list3)
-#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-list5 = ["a", "b" , "c"]
-list6 = [1, 2, 3]
 
-list5.extend(list6)
-print(list5)
+thistuple3 = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+print(thistuple3[2:5])
+
+
+thistuple4 = ("apple", "banana", "cherry")
+y = list(thistuple4)
+y.append("orange")
+thistuple4 = tuple(y)
+
+thistuple5 = ("apple", "banana", "cherry")
+for i in range(len(thistuple5)):
+  print(thistuple5[i])
+
+  tuple1 = ("a", "b" , "c")
+tuple2 = (1, 2, 3)
+
+tuple3 = tuple1 + tuple2
+print(tuple3)
+
