@@ -1,27 +1,54 @@
-thistuple = ("apple", "banana", "cherry")
-print(thistuple)
+thisset = {"apple", "banana", "cherry", "apple"}
 
+print(thisset)
+#//////////////////////////////////////////////////
+thisset1 = {"apple", "banana", "cherry"}
 
-thistuple2 = ("apple", "banana", "cherry")
-print(thistuple2[1])
+for x in thisset1:
+  print(x)
+  #/////////////////////////////////////////////////
+  thisset2 = {"apple", "banana", "cherry"}
 
+thisset2.add("orange")
 
-thistuple3 = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
-print(thistuple3[2:5])
+print(thisset2)
+#/////////////////////////////////////////////
+thisset3 = {"apple", "banana", "cherry"}
+tropical = {"pineapple", "mango", "papaya"}
 
+thisset3.update(tropical)
 
-thistuple4 = ("apple", "banana", "cherry")
-y = list(thistuple4)
-y.append("orange")
-thistuple4 = tuple(y)
+print(thisset3)
+#//////////////////////////////////////////////
+thisset4 = {"apple", "banana", "cherry"}
 
-thistuple5 = ("apple", "banana", "cherry")
-for i in range(len(thistuple5)):
-  print(thistuple5[i])
+thisset4.remove("banana")
 
-  tuple1 = ("a", "b" , "c")
-tuple2 = (1, 2, 3)
+print(thisset4)
+#//////////////////////////////////////////////////////
+thisset5 = {"apple", "banana", "cherry"}
 
-tuple3 = tuple1 + tuple2
-print(tuple3)
+thisset5.discard("banana")
+
+print(thisset5)
+#///////////////////////////////////////////
+thisset6 = {"apple", "banana", "cherry"}
+
+x = thisset6.pop()
+
+print(x)
+
+print(thisset6)
+#//////////////////////////////////////////////////
+thisset7 = {"apple", "banana", "cherry"}
+
+thisset7.clear()
+
+print(thisset7)
+#///////////////////////////////////////////////
+thisset8 = {"apple", "banana", "cherry"}
+
+del thisset8
+
+print(thisset8)
 
