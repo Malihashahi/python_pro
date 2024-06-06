@@ -1,54 +1,28 @@
-thisset = {"apple", "banana", "cherry", "apple"}
+#...................union ..............
+set1 = {"a", "b", "c"}
+set2 = {1, 2, 3}
+set3 = {"John", "Elena"}
+set4 = {"apple", "bananas", "cherry"}
 
-print(thisset)
-#//////////////////////////////////////////////////
-thisset1 = {"apple", "banana", "cherry"}
+myset = set1.union(set2, set3, set4)
+print(myset)
+#//////////////join set with tuple///////////////////////////////
+x = {"a", "b", "c"}
+y = (1, 2, 3)
 
-for x in thisset1:
-  print(x)
-  #/////////////////////////////////////////////////
-  thisset2 = {"apple", "banana", "cherry"}
+z = x.union(y)
+print(z)
+#/////////////////intersection &//////////////////////////////////\
+set5 = {"apple", "banana", "cherry"}
+set6 = {"google", "microsoft", "apple"}
 
-thisset2.add("orange")
+set7 = set1.intersection(set6)
+print(set7)
 
-print(thisset2)
-#/////////////////////////////////////////////
-thisset3 = {"apple", "banana", "cherry"}
-tropical = {"pineapple", "mango", "papaya"}
+#........../////////difference - ///////////////////..................
+set8 = {"apple", "banana", "cherry"}
+set9 = {"google", "microsoft", "apple"}
 
-thisset3.update(tropical)
+set10= set8.difference(set9)
 
-print(thisset3)
-#//////////////////////////////////////////////
-thisset4 = {"apple", "banana", "cherry"}
-
-thisset4.remove("banana")
-
-print(thisset4)
-#//////////////////////////////////////////////////////
-thisset5 = {"apple", "banana", "cherry"}
-
-thisset5.discard("banana")
-
-print(thisset5)
-#///////////////////////////////////////////
-thisset6 = {"apple", "banana", "cherry"}
-
-x = thisset6.pop()
-
-print(x)
-
-print(thisset6)
-#//////////////////////////////////////////////////
-thisset7 = {"apple", "banana", "cherry"}
-
-thisset7.clear()
-
-print(thisset7)
-#///////////////////////////////////////////////
-thisset8 = {"apple", "banana", "cherry"}
-
-del thisset8
-
-print(thisset8)
-
+print(set10)
