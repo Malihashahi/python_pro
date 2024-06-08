@@ -1,30 +1,32 @@
-
+#..........................................use pop .............
 thisdict = {
   "brand": "Ford",
   "model": "Mustang",
   "year": 1964
 }
-thisdict["year"] = 2018
-#;;;;;;;;;;;;;;;;;;; use update method;;;;;;;;;;;;;;;;;;;;;;;;;
+thisdict.pop("model")
+print(thisdict)
+#,,,,,,,,,,.....pop item method....................
 thisdict1 = {
   "brand": "Ford",
   "model": "Mustang",
   "year": 1964
-}  
-thisdict1.update({"year": 2020})
-#lllllllllllllllllllllllllllllllladd item to dictionary  
-
+}
+thisdict1.popitem()
+print(thisdict1)
+#..................del method usage...........................
 thisdict2 = {
   "brand": "Ford",
   "model": "Mustang",
   "year": 1964
 }
-thisdict2["color"] = "red"
+del thisdict2["model"]
 print(thisdict2)
-#.......................use update to add item...................................
+#.......................clear method................................
 thisdict3 = {
   "brand": "Ford",
   "model": "Mustang",
   "year": 1964
 }
-thisdict3.update({"color": "red"})
+thisdict3.clear()
+print(thisdict3)
