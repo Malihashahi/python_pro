@@ -1,12 +1,12 @@
-a = 33
-b = 200
-if b > a:
-  print("b is greater than a")
-  #.......................................................
-  
-a = 200
-b = 33
-if b > a:
-  print("b is greater than a")
-else:
-  print("b is not greater than a")
+i = 1
+while i < 6:
+  print(i)
+  if i == 3:
+    break
+
+  k = 0
+while k< 6:
+  k += 1
+  if i == 3:
+    continue
+  print(k)
