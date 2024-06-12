@@ -7,7 +7,7 @@ users ={
 
 entered_username = input('enter your username :')
 entered_password = input('enter your password :')
-if entered_username in users:
+if entered_username in users and users[entered_username]== entered_password:
   print('yes your welcome')
 else:
   print('your not our users')
