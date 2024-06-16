@@ -1,11 +1,9 @@
 
 fruits = ["apple", "banana", "cherry"]
+fruits1 = ["apple", "banana", "cherry"]
 
-b=[]
-for fr in fruits :
-  if fr[0] == "a":
-    b.append(fr)
-
-
-
-    print(len(b))
+c=[]
+for i in fruits:
+  for n in fruits1:
+    if i == n :
+      c.append(i)
