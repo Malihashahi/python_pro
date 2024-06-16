@@ -1,9 +1,11 @@
-adj = ["red", "big", "tasty"]
+
 fruits = ["apple", "banana", "cherry"]
 
-for x in adj:
-  for y in fruits:
-    print(x, y)
+b=[]
+for fr in fruits :
+  if fr[0] == "a":
+    b.append(fr)
 
-    for h  in [0, 1, 2]:
-     pass
+
+
+    print(len(b))
