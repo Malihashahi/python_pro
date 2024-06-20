@@ -1,4 +1,4 @@
-def my_function(*args):
-  print("The youngest child is " + args[2])
+def my_function(**kid):
+  print("His last name is " + kid["lname"])
 
-my_function("Emil", "Tobias", "Linus")
+my_function(fname = "Tobias", lname = "Refsnes")
