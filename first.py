@@ -1,7 +1,7 @@
-def my_function(country = "Norway"):
-  print("I am from " + country)
+def my_function(food):
+  for x in food:
+    print(x)
 
-my_function("Sweden")
-my_function("India")
-my_function()
-my_function("Brazil")
+fruits = ["apple", "banana", "cherry"]
+
+my_function(fruits)
