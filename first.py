@@ -1,19 +1,10 @@
-
-def myfunc(name):
-  ups=0
-  lows=0
-  for n in name:
-    if n.isupper():
-         ups += 1
-    elif  n.islower():
-         lows += 1
-    else: 
-         pass
-       
-  print(f"upper cases: {ups}")
-  print(f"lower cases: {lows}")
+def numberType(number):
+     if  number % 2 == 0:
+          print("this and even number ")
+     else:
+          print("this is an odd number")
 
 
+number =int(input("enter a number : "))
 
-name = input('enter your name : ')
-myfunc(name)
+numberType(number)
