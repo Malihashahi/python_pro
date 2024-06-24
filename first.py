@@ -1,10 +1,14 @@
-def numberType(number):
-     if  number % 2 == 0:
-          print("this and even number ")
+def  converter(day,month, year):
+     if month > 10 or day  > 10 and month == 10:
+          birthday = year + 622
      else:
-          print("this is an odd number")
+          birthday = year + 621
+
+     print(f"your year of birthday is {birthday}")    
 
 
-number =int(input("enter a number : "))
+day = int (input("enter day: "))
+month = int (input("enter month: "))
+year = int (input("enter year: "))
 
-numberType(number)
+converter(day ,month , year)
