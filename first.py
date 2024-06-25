@@ -1,14 +1,8 @@
-def  converter(day,month, year):
-     if month > 10 or day  > 10 and month == 10:
-          birthday = year + 622
-     else:
-          birthday = year + 621
+def myfunc(n):
+  return lambda a : a * n
 
-     print(f"your year of birthday is {birthday}")    
+mydoubler = myfunc(2)
+mytripler = myfunc(3)
 
-
-day = int (input("enter day: "))
-month = int (input("enter month: "))
-year = int (input("enter year: "))
-
-converter(day ,month , year)
+print(mydoubler(11))
+print(mytripler(11))
