@@ -1,8 +1,9 @@
-def myfunc(n):
-  return lambda a : a * n
+def myfunc(a, b):
+  return a + b
 
-mydoubler = myfunc(2)
-mytripler = myfunc(3)
+x = map(myfunc, ('apple', 'banana', 'cherry'), ('orange', 'lemon', 'pineapple'))
 
-print(mydoubler(11))
-print(mytripler(11))
+print(x)
+
+#convert the map into a list, for readability:
+print(list(x))
