@@ -1,9 +1,9 @@
-def myfunc(a, b):
-  return a + b
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
 
-x = map(myfunc, ('apple', 'banana', 'cherry'), ('orange', 'lemon', 'pineapple'))
+p1 = Person("John", 36)
 
-print(x)
-
-#convert the map into a list, for readability:
-print(list(x))
+print(p1.name)
+print(p1.age)
