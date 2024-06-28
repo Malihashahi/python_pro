@@ -1,9 +1,7 @@
 class Person:
-  def __init__(self, name, age):
+  def __init__(self, name):
     self.name = name
-    self.age = age
-
-p1 = Person("John", 36)
+  
+p1 = Person("maliha")
 
 print(p1.name)
-print(p1.age)
