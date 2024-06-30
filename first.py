@@ -1,10 +1,18 @@
-class Person:
-  def __init__(self, name, age):
-    self.name = name
-    self.age = age
+class Car:
 
-  def myfunc(self):
-    print("Hello my name is " + self.name)
+    def __init__(self , name , price):
+        self.name = name
+        self.price = price
 
-p1 = Person("Maliha", 24)
-p1.myfunc()
+    def start(self):
+        print(f"{self.name} is start")
+    
+    def off(self):
+        print(f"{self.name} is off now")
+
+
+        
+
+        
+
+car1= Car("benz" ,"230000")
