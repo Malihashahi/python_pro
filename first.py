@@ -1,18 +1,14 @@
-class Car:
+class Person:
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
 
-    def __init__(self , name , price):
-        self.name = name
-        self.price = price
+  def printname(self):
+    print(self.firstname, self.lastname)
 
-    def start(self):
-        print(f"{self.name} is start")
-    
-    def off(self):
-        print(f"{self.name} is off now")
+#Use the Person class to create an object, and then execute the printname method:
 
-
-        
-
-        
-
-car1= Car("benz" ,"230000")
+x = Person("bahar", "shahi")
+x.printname()
+class Student(Person):
+  pass
