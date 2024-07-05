@@ -1,18 +1,21 @@
-class MyNumbers:
-  def __iter__(self):
-    self.a = 1
-    return self
+class Person:
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
 
-  def __next__(self):
-    x = self.a
-    self.a += 1
-    return x
+  def printname(self):
+    print(self.firstname, self.lastname)
 
-myclass = MyNumbers()
-myiter = iter(myclass)
+#Use the Person class to create an object, and then execute the printname method:
 
-print(next(myiter))
-print(next(myiter))
-print(next(myiter))
-print(next(myiter))
-print(next(myiter))
+x = Person("Maliha", "shahi")
+x.printname()
+class Student(Person):
+  def __init__(self, fname, lname):
+    super().__init__(fname, lname)
+
+  class Student(Person):
+   def __init__(self, fname, lname):
+    super().__init__(fname, lname)
+    self.graduationyear = 2019
+
