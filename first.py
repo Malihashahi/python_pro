@@ -1,21 +1,21 @@
-class Person:
-  def __init__(self, fname, lname):
-    self.firstname = fname
-    self.lastname = lname
+class User:
+    def __init__(self ,firstname ,lastname):
+      self.fname = firstname
+      self.lname = lastname
+    def fullname(self):
+       print(f"my fullname is {self.fname}{self.lname}")
+  
 
-  def printname(self):
-    print(self.firstname, self.lastname)
+class Student(User):
+    def __init__(self, firstname, lastname ,email):
+       super().__init__(firstname, lastname)
+       self.email =email
+    
+    def fullname(self):
+       print("I am a student")
+       return super().fullname()
+    
 
-#Use the Person class to create an object, and then execute the printname method:
-
-x = Person("Maliha", "shahi")
-x.printname()
-class Student(Person):
-  def __init__(self, fname, lname):
-    super().__init__(fname, lname)
-
-  class Student(Person):
-   def __init__(self, fname, lname):
-    super().__init__(fname, lname)
-    self.graduationyear = 2019
-
+    
+s1 = Student("Maliha " ,"Shahi" ,"maliha@gmail.com")
+s1.fullname()
