@@ -1,5 +1,4 @@
-def myfunc():
-  global x
-  x = 300
+import platform
 
-myfunc()
+x = platform.system()
+print(x)
