@@ -1,15 +1,10 @@
-import math
+import json
 
-x = math.ceil(1.4)
-y = math.floor(1.4)
+# some JSON:
+x =  '{ "name":"bahar", "age":23, "city":"New York"}'
 
-print(x) # returns 2
-print(y) # returns 1
+# parse x:
+y = json.loads(x)
 
-
-
-mylist = [16,34,67]
-b= max(mylist)
-k= min(mylist)
-print('max is ',b)
-print('min is ',k)
+# the result is a Python dictionary:
+print(y["age"])
