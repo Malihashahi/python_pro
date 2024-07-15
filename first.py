@@ -1,19 +1,21 @@
-def palindrome(number):
-    print("original number", number)
-    original_num = number
+def merge_list(list1, list2):
+    result_list = []
     
-    # reverse the given number
-    reverse_num = 0
-    while number > 0:
-        reminder = number % 10
-        reverse_num = (reverse_num * 10) + reminder
-        number = number // 10
+    # iterate first list
+    for num in list1:
+        # check if current number is odd
+        if num % 2 != 0:
+            # add odd number to result list
+            result_list.append(num)
+    
+    # iterate second list
+    for num in list2:
+        # check if current number is even
+        if num % 2 == 0:
+            # add even number to result list
+            result_list.append(num)
+    return result_list
 
-    # check numbers
-    if original_num == reverse_num:
-        print("Given number palindrome")
-    else:
-        print("Given number is not palindrome")
-
-palindrome(121)
-palindrome(125)
+list1 = [10, 20, 25, 30, 35]
+list2 = [40, 45, 60, 75, 90]
+print("result list:", merge_list(list1, list2))
