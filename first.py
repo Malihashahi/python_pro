@@ -1,14 +1,19 @@
-import json
+def palindrome(number):
+    print("original number", number)
+    original_num = number
+    
+    # reverse the given number
+    reverse_num = 0
+    while number > 0:
+        reminder = number % 10
+        reverse_num = (reverse_num * 10) + reminder
+        number = number // 10
 
-# a Python object (dict):
-x = {
-  "name": "Maliha",
-  "age": 24,
-  "city": "New York"
-}
+    # check numbers
+    if original_num == reverse_num:
+        print("Given number palindrome")
+    else:
+        print("Given number is not palindrome")
 
-# convert into JSON:
-y = json.dumps(x)
-
-# the result is a JSON string:
-print(y)
+palindrome(121)
+palindrome(125)
