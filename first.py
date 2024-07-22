@@ -1,3 +1,8 @@
-price = 59
-txt = f"The price is {price:.2f} dollars"
-print(txt)
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = []
+
+for x in fruits:
+  if "a" in x:
+    newlist.append(x)
+
+print(newlist)
