@@ -1,32 +1,27 @@
-# defining a decorator
-def hello_decorator(func):
+class Base:
+    def __init__(self):
+        self.a = "mlih"
+        self.__c = "mslin"
 
-    # inner1 is a Wrapper function in 
-    # which the argument is called
-    
-    # inner function can access the outer local
-    # functions like in this case "func"
-    def inner1():
-        print("Hello, this is before function execution")
+# Creating a derived class
+class Derived(Base):
+    def __init__(self):
 
-        # calling the actual function now
-        # inside the wrapper function.
-        func()
-
-        print("This is after function execution")
-        
-    return inner1
+        # Calling constructor of
+        # Base class
+        Base.__init__(self)
+        print("Calling private member of base class: ")
+        print(self.__c)
 
 
-# defining a function, to be called inside wrapper
-def function_to_be_used():
-    print("This is inside the function !!")
+# Driver code
+obj1 = Base()
+print(obj1.a)
 
+# Uncommenting print(obj1.c) will
+# raise an AttributeError
 
-# passing 'function_to_be_used' inside the
-# decorator to control its behaviour
-function_to_be_used = hello_decorator(function_to_be_used)
-
-
-# calling the function
-function_to_be_used()
+# Uncommenting obj2 = Derived() will
+# also raise an AttributeError as
+# private member of base class
+# is called inside derived class
