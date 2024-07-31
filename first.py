@@ -1,25 +1,52 @@
-# Python program showing a use 
-# of get() and set() method in 
-# normal function 
-  
-class Geek: 
-    def __init__(self, age = 0): 
-         self._age = age 
-      
-    # getter method 
-    def get_age(self): 
-        return self._age 
-      
-    # setter method 
-    def set_age(self, x): 
-        self._age = x 
-  
-raj = Geek() 
-  
-# setting the age using setter 
-raj.set_age(21) 
-  
-# retrieving age using getter 
-print(raj.get_age()) 
-  
-print(raj._age) 
+# Python program showing
+# abstract base class work
+from abc import ABC, abstractmethod
+
+
+class Polygon(ABC):
+
+    @abstractmethod
+    def noofsides(self):
+        pass
+
+
+class Triangle(Polygon):
+
+    # overriding abstract method
+    def noofsides(self):
+        print("I have 3 sides")
+
+
+class Pentagon(Polygon):
+
+    # overriding abstract method
+    def noofsides(self):
+        print("I have 5 sides")
+
+
+class Hexagon(Polygon):
+
+    # overriding abstract method
+    def noofsides(self):
+        print("I have 6 sides")
+
+
+class Quadrilateral(Polygon):
+
+    # overriding abstract method
+    def noofsides(self):
+        print("I have 4 sides")
+
+
+# Driver code
+R = Triangle()
+R.noofsides()
+
+K = Quadrilateral()
+K.noofsides()
+
+R = Pentagon()
+R.noofsides()
+
+K = Hexagon()
+K.noofsides()
