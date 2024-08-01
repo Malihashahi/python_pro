@@ -1,52 +1,28 @@
-# Python program showing
-# abstract base class work
-from abc import ABC, abstractmethod
 
 
-class Polygon(ABC):
-
-    @abstractmethod
-    def noofsides(self):
-        pass
-
-
-class Triangle(Polygon):
-
-    # overriding abstract method
-    def noofsides(self):
-        print("I have 3 sides")
-
-
-class Pentagon(Polygon):
-
-    # overriding abstract method
-    def noofsides(self):
-        print("I have 5 sides")
-
-
-class Hexagon(Polygon):
-
-    # overriding abstract method
-    def noofsides(self):
-        print("I have 6 sides")
-
-
-class Quadrilateral(Polygon):
-
-    # overriding abstract method
-    def noofsides(self):
-        print("I have 4 sides")
-
-
-# Driver code
-R = Triangle()
-R.noofsides()
-
-K = Quadrilateral()
-K.noofsides()
-
-R = Pentagon()
-R.noofsides()
-
-K = Hexagon()
-K.noofsides()
+# Python program to demonstrate writing of __repr__ and
+# __str__ for user defined classes
+ 
+# A user defined class to represent Complex numbers
+class Complex:
+ 
+    # Constructor
+    def __init__(self, real, imag):
+     self.real = real
+     self.imag = imag
+ 
+    # For call to repr(). Prints object's information
+    def __repr__(self):
+     return 'Rational(%s, %s)' % (self.real, self.imag)    
+ 
+    # For call to str(). Prints readable form
+    def __str__(self):
+     return '%s + i%s' % (self.real, self.imag)    
+ 
+ 
+# Driver program to test above
+t = Complex(10, 20)
+ 
+# Same as "print t"
+print (str(t))
+print (repr(t))
