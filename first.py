@@ -1,10 +1,9 @@
-def gen_with_error():
-    yield 1
-    raise ValueError("Error inside generator")
 
-g = gen_with_error()
-print(next(g))
-try:
-    g.throw(ValueError, "Error thrown")
-except ValueError as e:
-    print(e)
+# File1.py  
+  
+print ("File1 __name__ = %s" %__name__)  
+  
+if __name__ == "__main__":  
+    print ("File1 is being run directly") 
+else:  
+    print ("File1 is being imported") 
