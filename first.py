@@ -1,9 +1,13 @@
 
-# File1.py  
-  
-print ("File1 __name__ = %s" %__name__)  
-  
-if __name__ == "__main__":  
-    print ("File1 is being run directly") 
-else:  
-    print ("File1 is being imported") 
+
+# Python program showing
+# a scope of object
+ 
+def some_func():
+    print("Inside some_func")
+    def some_inner_func():
+        var = 10
+        print("Inside inner function, value of var:",var)
+    some_inner_func()
+    print("Try printing var from outer function: ",var)
+some_func()
