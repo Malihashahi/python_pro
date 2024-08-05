@@ -1,13 +1,13 @@
 
 
-# Python program showing
-# a scope of object
+var1 = 10
+def fun():
+    # tell python explicitly do not 
+    # initialise a new variable
+    # instead access var1 which 
+    # has global scope
+    global var1
+    var1 = var1 + 20
+    print('var1 is', var1)
  
-def some_func():
-    print("Inside some_func")
-    def some_inner_func():
-        var = 10
-        print("Inside inner function, value of var:",var)
-    some_inner_func()
-    print("Try printing var from outer function: ",var)
-some_func()
+fun()
